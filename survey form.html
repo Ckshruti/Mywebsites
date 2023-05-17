@@ -1,0 +1,162 @@
+<html>
+	<head>
+		<title> survey form </title>
+		<style>
+			body {
+				background:url(C:/Users/shrut/OneDrive/Desktop/bgpic.avif);
+				color:white;
+			}
+			.container {
+				width: 100%;
+				display:flex;
+				flex-direction:column;
+				align-items:center;
+				border: 2px solid yellow;
+				height:auto;
+			}
+			.form-title {
+				font-family: sans-serif;
+				color: yellow;
+			}
+			.user-info-div {
+				line-height:2;
+				font-size:20px;
+				display:flex;
+				flex-direction:column;
+				width:600px;
+			}
+			.item {
+				height:50px;
+				width:600px;
+				border-radius:5px;
+			}
+		
+			select {
+				height:50px;
+				width:600px;
+				border-radius:5px;
+			}
+			textarea {
+				height:100px;
+				width:600px;
+				border-radius:5px;
+			}
+			submit {
+				height:50px;
+				width:600px;
+				border-radius:5px;
+			}
+			.main-form{
+				background-color:blue;
+				border:2px solid yellow;
+				display:flex;
+				flex-direction:column;
+				align-items:center;
+				height:auto;
+				width:750px;
+				padding-top: 50px;
+				padding-bottom:50px
+			}
+			.form-xxx{
+				display:flex;
+				height:auto;
+				max-width:100%;
+			}
+			#sub{
+				height:50px;
+				width:600;
+				margin-top:30px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="form-title"> freeCodeCamp Survey Form </h1>
+			<h3> Thank you for taking the time to help us improve the platform </h3>
+			<form class="main-form">
+					<div class="user-info-div">
+						<label for="name"> Name </label>
+						<input class="item" type="text" name="naam" id="name" placeholder="Enter name">
+					</div>
+					<div class="user-info-div">
+						<label for="mail"> E-mail </label> 
+						<input class="item" type="email" name="mail" id="mail" placeholder="Enter E-mail">
+					</div>
+					<div class="user-info-div">
+						<label for="age"> Age (optional) </label>
+						<input class="item" type="number" name="age" id="age" placeholder="Enter Age" min="10" max="100">
+					</div>
+					<div class="user-info-div">
+						<label for="current role"> Which option best describes your current role? </label>
+						<select id="current role" name="current role">
+							<option value="Select current Role"> Select Current Role </option>
+							<option value="Student"> Student </option>
+							<option value="Full time job"> Full time job </option>
+							<option value="Full time learner"> Full time learner </option>
+							<option value="Prefer not to say"> Prefer not to say </option>
+							<option value="Other"> Other </option>
+						</select>
+					</div>
+					<div class="user-info-div">
+						<h4> Would you recommend freeCodeCamp to a friend? </h4>
+						<div class="form-xxx">
+							<input type="radio" id="definitely" name="friend">
+							<label for="definitely"> Definitely </label>
+						</div>
+						<div class="form-xxx">
+							<input type="radio" id="may be" name="friend">
+							<label for="may be"> May Be </label>
+						</div>
+						<div class="form-xxx">
+							<input type="radio" id="not sure" name="friend">
+							<label for="not sure"> Not Sure </label>
+						</div>
+					</div>
+					<div class="user-info-div">
+						<label for="favorite-feature"> What is your favorite feature of freeCodeCamp? </label>
+						<select id="favorite-feature" name="favorite-feature">
+							<option value="Select an option"> Select an option </option>
+							<option value="challenges"> Challenges </option>
+							<option value="projects"> Projects </option>
+							<option value="communit"> Community </option>
+							<option value="open source"> Open source </option>
+						</select>
+					</div>
+					<div class="user-info-div">
+						<label> <h3> What would you like to see improved? (Check all that apply) </label> <br>
+						<input type="checkbox" id="front-end-projects" name="improvement">
+						<label for="front-end-projects"> Front-End- Projects </label> <br>
+						<input type="checkbox" id="Back-end-projects" name="improvement"> 
+						<label for="Back-end-projects"> Back-End- Projects </label> <br>
+						<input type="checkbox" id="Data Visualization" name="improvement">
+						<label for="Data Visualization"> Data Visualization </label> <br>
+						<input type="checkbox" id="Challenges" name="improvement">
+						<label for="Challenges"> Challenges </label> <br>
+						<input type="checkbox" id="Open source community" name="improvement">
+						<label for="Open source community"> Open Source community </label> <br>
+						<input type="checkbox" id="Gitter help room" name="improvement">
+						<label for="Gitter help room"> Gitter help rooms </label> <br>
+						<input type="checkbox" id="Videos" name="improvement">
+						<label for="Videos"> Videos </label> <br>
+						<input type="checkbox" id="City Meetups" name="improvement">
+						<label for="City Meetups"> City Meetups </label> <br>
+						<input type="checkbox" id="Wiki" name="improvement">
+						<label for="Wiki"> Wiki </label> <br>
+						<input type="checkbox" id="Forum" name="improvement">
+						<label for="Forum"> Forum </label> <br>
+						<input type="checkbox" id="Additional Courses" name="improvement">
+						<label for="Additional Courses"> Additional Courses </label>
+					</div>
+					<div class="user-info-div">
+						<label> Any comments or suggestions? </label>
+						<textarea id="comment" name="cmnt" rows="10" cols="10">
+						</textarea>
+					</div>
+					<div class="user-info-div">
+						<input type="submit" id="sub" value="Submit"> 
+					</div>
+			</form>
+		</div>
+	</body>
+</html>
